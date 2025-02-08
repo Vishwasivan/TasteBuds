@@ -1,4 +1,5 @@
-# ![logo-image](src/assets/circular_favicon__1_-removebg-preview.png) TasteBuds
+# TasteBuds
+<img src="src/assets/circular_favicon__1_-removebg-preview.png" alt="logo-image" width="80">
 
 Welcome to **TasteBuds**, a website that helps you generate delicious recipes based on the ingredients you have! Whether you're looking to create something new or make the most of what's in your kitchen, this tool has you covered.
 
