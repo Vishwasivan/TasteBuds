@@ -26,11 +26,15 @@ Simply visit our website, input the ingredients, and let the tool do the rest. I
 - **Filter by Cuisine**: Get recipes inspired by different cuisines and cooking styles.
 Simply visit our website, input the ingredients, and let the tool do the rest. It will provide you with a customized recipe tailored to what you have on hand.
 
+## 🖥️ Built With
+- **React.js** – A powerful JavaScript library for building user interfaces.
+- **Vite** – A fast build tool optimized for modern web development.
+
 ## 🖥️ Installation (For Developers)
 If you want to run the project locally:
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/TasteBuds.git
+git clone https://github.com/Vishwasivan/TasteBuds.git
 
 # Navigate to the project folder
 cd TasteBuds
@@ -45,7 +49,7 @@ npm run dev
 ```
 
 # Import and use the API key in your project
-In your JavaScript file, import the API key and initialize the Hugging Face inference:
+In your JavaScript file (src/huggingface.js), import the API key and initialize the Hugging Face inference:
 ```javascript
 const apiKey = import.meta.env.VITE_HUGGINGFACE_API_KEY;
 const hf = new HfInference(apiKey);
@@ -76,6 +80,17 @@ VITE_HUGGINGFACE_API_KEY=your-huggingface-api-key
 VITE_MODEL_NAME=mistralai/Mixtral-8x7B-Instruct-v0.1
 ```
 Make sure to replace `your-huggingface-api-key` with your actual Hugging Face API key. The model name is already set to `mistralai/Mixtral-8x7B-Instruct-v0.1`.
+
+### Using Other API Keys
+Along with the Hugging Face API, you can also use API keys from other services. To do this, add additional environment variables in your `.env` file:
+```
+VITE_OTHER_API_KEY=your-other-api-key
+```
+Then, access it in your code similarly:
+```javascript
+const otherApiKey = import.meta.env.VITE_OTHER_API_KEY;
+```
+This allows flexibility in integrating multiple APIs as needed.
 
 ## 📌 Contributing
 Contributions are welcome! If you have ideas for improvements, feel free to submit a pull request or open an issue.
