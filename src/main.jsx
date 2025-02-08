@@ -42,7 +42,7 @@ export default function Main(){
     return (
         <div className="form-input">
             <form onSubmit={submit}>
-                <input type="text" name="add-item" id="add-item" placeholder="  Enter ingredient" />
+                <input type="text" name="add-item" id="add-item" placeholder="Enter ingredient" />
                 <button type="submit">Add</button>
             </form>
             { items.length > 0 && <div>

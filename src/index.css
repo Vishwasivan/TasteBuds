@@ -41,6 +41,7 @@ header > img{
   border: 1px solid #222222;
   border-radius: 20px;
   min-width: 100px;
+  text-indent: 10px;
 }
 
 .form-input > form > button {
