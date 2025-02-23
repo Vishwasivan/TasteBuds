@@ -1,7 +1,9 @@
+import logo from '/src/assets/logo.png';
+
 export default function Header(){
     return (
         <header>
-            <img src="src/assets/logo.png" alt="" />
+            <img src={logo} alt="" />
         </header>
     )
 }
